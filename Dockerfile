@@ -56,11 +56,6 @@ RUN julia -e 'using Pkg; Pkg.add(["Meshes","ImageFiltering","Accessors","UUIDs",
 # Set up Google Cloud credentials
 ENV PATH $PATH:/root/google-cloud-sdk/bin
 COPY infostrateg-b-f395071711c1.json /root/.devcontainer/infostrateg-b-f395071711c1.json
-ENV GOOGLE_APPLICATION_CREDENTIALS="/root/.devcontainer/infostrateg-b-f395071711c1.json"
-RUN gcloud auth activate-service-account --key-file="/root/.devcontainer/infostrateg-b-f395071711c1.json"
-
-# Setup Weights & Biases
-ENV WANDB_API_KEY=5a6c2e2caccb19a9c3cbfde388b61c7104eab632
 
 # Copy application files
 COPY generate-random_can_low_res.jl /root/.devcontainer/generate-random_can_low_res.jl
