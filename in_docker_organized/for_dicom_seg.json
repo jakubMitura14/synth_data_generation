@@ -1,0 +1,32 @@
+{
+    "ContentCreatorName": "Reader1",
+    "ClinicalTrialSeriesID": "Session1",
+    "ClinicalTrialTimePointID": "1",
+    "SeriesDescription": "Segmentation",
+    "SeriesNumber": "300",
+    "InstanceNumber": "1",
+    "BodyPartExamined": "aa",
+    "segmentAttributes": [
+      [
+        {
+          "labelID": 1,
+          "SegmentDescription": "aa",
+          "SegmentAlgorithmType": "SEMIAUTOMATIC",
+          "SegmentAlgorithmName": "aa",
+          "SegmentedPropertyCategoryCodeSequence": {
+            "CodeValue": "123037004",
+            "CodingSchemeDesignator": "SCT",
+            "CodeMeaning": "Anatomical Structure"
+          },
+          "SegmentedPropertyTypeCodeSequence": {
+            "CodeValue": "91750005",
+            "CodingSchemeDesignator": "SCT",
+            "CodeMeaning": "1st Diagonal Coronary Artery"
+          }
+        }
+      ]
+    ],
+    "ContentLabel": "SEGMENTATION",
+    "ContentDescription": "Image segmentation",
+    "ClinicalTrialCoordinatingCenterName": "dcmqi"
+  }
